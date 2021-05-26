@@ -13,3 +13,7 @@
     XDからのアセットの書き出し
     index.html, _mixin.scss, style.scss, _base.scssのコーディング
     コーディング計画作成: index.html(sp) → index.html(tablet) → index.html(pc)
+
+ 20210526 作業内容(0.5)
+    formタグの実装
+    fontawesomeのplaceholderへの実装
