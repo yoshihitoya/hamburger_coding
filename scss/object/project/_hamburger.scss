@@ -1,16 +1,10 @@
-.l-sidebar {
+.menu {
     display: none;
 }
 
-
-.l-header {
+.menu.is-active {
+    display: block;
     background-color: #FFF7EF;
-    
-    &__menu {
-        display: flex;
-        flex-direction: column;
-        
-    }
 }
 
 

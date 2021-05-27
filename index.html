@@ -5,15 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="scss/style.css">
     <title>Hamburger</title>
 </head>
 <body>
     <!-- ヘッダー -->
     <header class="l-header">
+
+        <!-- ハンバーガーメニュー  (https://eclair.company/media/make-hamburger-menu-simply/) -->
+        <nav class="l-header__menu l-sidebar">
+            <div class="menu-btn">Menu</div>
+            <div class="menu">
+                <!-- メニューのタイトルが入っていない -->
+                <ul class="buger">
+                    <li>ハンバーガー</li>
+                    <li>チーズバーガー</li>
+                    <li>テリヤキバーガー</li>
+                    <li>アボガドバーガー</li>
+                    <li>フィッシュバーガー</li>
+                    <li>ベーコンバーガー</li>
+                    <li>チキンバーガー</li>
+                </ul>
+                <ul class="side">
+                    <li>ポテト</li>
+                    <li>サラダ</li>
+                    <li>ナゲット</li>
+                    <li>コーン</li>
+                </ul>
+                <ul class="drink">
+                    <li>コーラ</li>
+                    <li>ファンタ</li>
+                    <li>オレンジ</li>
+                    <li>アップル</li>
+                    <li>紅茶(Ice/Hot)</li>
+                    <li>コーヒー(Ice/Hot)</li>
+                </ul>
+            </div>
+        </nav>
         <h1 class="l-header__title">Hamburger</h1>
         <form action="" method="get">
-            <input type="search" name="search" placeholder="">
+            <input  class="l-header__search__box" type="search" name="search" placeholder="">
+            <button class="l-header__seach__btn" >検索</button>
         </form>
         <!-- https://style01.net/1203/ -->
         <!-- inputのplaceholderにfontawesomeのアイコンを表示させる -->
@@ -41,5 +73,17 @@
 
     </footer>
     
+
+    <!-- jQueryのCDN -->
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+<!-- ハンバーガーメニューのクラスの付け替え -->
+<script>
+    $('.menu-btn').on('click', function(){
+    $('.menu').toggleClass('is-active');
+});
+</script>
+
 </body>
+
 </html>

@@ -25,18 +25,24 @@
 // -----------------------------------------------------------------
 // Component
 // -----------------------------------------------------------------
-@import "object/component/button";
-@import "object/component/grid";
+
+// @import "object/component/button";
+// @import "object/component/grid";
 
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
-@import "object/project/copyright";
+// @import "object/project/copyright";
+
 @import "object/project/gmenu";
+// サイドバーを記述
+
 @import "object/project/hamburger";
-@import "object/project/mainvisual";
+// ハンバーガーメニューを記述
+
+// @import "object/project/mainvisual";
 
 // -----------------------------------------------------------------
 // Utility
 // -----------------------------------------------------------------
-@import "object/utility/display";
+// @import "object/utility/display";
