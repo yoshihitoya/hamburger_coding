@@ -1,8 +1,8 @@
-.menu {
+.l-header__menu-list {
     display: none;
 }
 
-.menu.is-active {
+.l-header__menu-list.is-active {
     display: block;
     background-color: #FFF7EF;
 }

@@ -9,6 +9,13 @@
     &__menu {
         display: flex;
         flex-direction: column;
+
+        &-btn {
+            position: relative;
+            left: 85vw;
+            width: 0%;
+            
+        }
         
     }
 }

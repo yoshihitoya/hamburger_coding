@@ -74,12 +74,17 @@ time {
   display: flex;
   flex-direction: column;
 }
+.l-header__menu-btn {
+  position: relative;
+  left: 85vw;
+  width: 0%;
+}
 
-.menu {
+.l-header__menu-list {
   display: none;
 }
 
-.menu.is-active {
+.l-header__menu-list.is-active {
   display: block;
   background-color: #FFF7EF;
 }/*# sourceMappingURL=style.css.map */

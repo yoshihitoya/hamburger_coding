@@ -14,10 +14,11 @@
 
         <!-- ハンバーガーメニュー  (https://eclair.company/media/make-hamburger-menu-simply/) -->
         <nav class="l-header__menu l-sidebar">
-            <div class="menu-btn">Menu</div>
-            <div class="menu">
+            <div class="l-header__menu-btn">Menu</div>
+            <div class="l-header__menu-list">
                 <!-- メニューのタイトルが入っていない -->
-                <ul class="buger">
+                <ul class="burger">
+                    <h2>バーガー</h2>
                     <li>ハンバーガー</li>
                     <li>チーズバーガー</li>
                     <li>テリヤキバーガー</li>
@@ -27,12 +28,14 @@
                     <li>チキンバーガー</li>
                 </ul>
                 <ul class="side">
+                    <h2>サイド</h2>
                     <li>ポテト</li>
                     <li>サラダ</li>
                     <li>ナゲット</li>
                     <li>コーン</li>
                 </ul>
                 <ul class="drink">
+                    <h2>ドリンク</h2>
                     <li>コーラ</li>
                     <li>ファンタ</li>
                     <li>オレンジ</li>
@@ -79,8 +82,8 @@
 
 <!-- ハンバーガーメニューのクラスの付け替え -->
 <script>
-    $('.menu-btn').on('click', function(){
-    $('.menu').toggleClass('is-active');
+    $('.l-header__menu-btn').on('click', function(){
+    $('.l-header__menu-list').toggleClass('is-active');
 });
 </script>
 
