@@ -1,5 +1,39 @@
+// menu クリック前
+
+.fa {
+    display: none;
+}
+
+
 .l-header__menu-list {
     display: none;
+}
+
+
+// menu クリック後
+
+.fa.is-active {
+    display: block;
+    position: relative;
+    left: 75vw;
+    color: #707070;
+}
+
+
+.l-header.is-active {
+    position: relative;
+    left: 10vw;
+    width: 85vw;
+    padding: 1vw;
+
+    
+    .l-header__title {
+        display: none;
+    }
+    .l-header__search {
+        display: none;
+    }
+
 }
 
 .l-header__menu-btn.is-active {
@@ -11,6 +45,13 @@
     display: block;
     z-index: 10;
     background-color: #FFF7EF;
+    padding: 2.0rem;
+    
+
+
+    & h2 {
+        font-size: 2rem;
+    }
    
 }
 

@@ -5,7 +5,9 @@
 
 .l-header {
     background-color: #FFF7EF;
-    
+    font-family: 'Roboto';
+    color: #707070;
+    height: 30vh;
     &__menu {
         display: flex;
         flex-direction: column;
@@ -16,8 +18,19 @@
             position: relative;
             left: 85vw;
             width: 0%;
+            font-size: 1.5rem;
             
         }
+        
+    }
+    &__title {
+        font-size: 3.0rem;
+        font-weight: bold;
+        text-align: center;
+        margin: 2.0rem;
+    }
+    &__search {
+        text-align: center;
         
     }
 }

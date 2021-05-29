@@ -4,48 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3d8455f7e1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="scss/style.css">
+    <!-- Googleフォントの使い方 -->
+    <!-- https://www.webdesignleaves.com/pr/plugins/googleFonts_01.html -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Hamburger</title>
 </head>
 <body >
     <!-- ヘッダー -->
     <header class="l-header"> 
         <!-- ハンバーガーメニュー  (https://eclair.company/media/make-hamburger-menu-simply/) -->
+        <i class="fa fa-remove fa-3x" aria-hidden="true"></i>
         <nav class="l-header__menu l-sidebar">
             <div class="l-header__menu-btn">Menu</div>
+            <!-- fontawesomeの設定と使い方 -->
+            <!-- https://coliss.com/articles/build-websites/operation/work/font-awesome-guide-and-useful-tricks.html -->
             <div class="l-header__menu-list">
                 <!-- メニューのタイトルが入っていない -->
                 <ul class="burger">
-                    <h2>バーガー</h2>
+                    <h2>バーガー<br><br></h2>
                     <li>ハンバーガー</li>
                     <li>チーズバーガー</li>
                     <li>テリヤキバーガー</li>
                     <li>アボガドバーガー</li>
                     <li>フィッシュバーガー</li>
                     <li>ベーコンバーガー</li>
-                    <li>チキンバーガー</li>
+                    <li>チキンバーガー<br><br></li>
                 </ul>
                 <ul class="side">
-                    <h2>サイド</h2>
+                    <h2>サイド<br><br></h2>
                     <li>ポテト</li>
                     <li>サラダ</li>
                     <li>ナゲット</li>
-                    <li>コーン</li>
+                    <li>コーン<br><br></li>
                 </ul>
                 <ul class="drink">
-                    <h2>ドリンク</h2>
+                    <h2>ドリンク<br><br></h2>
                     <li>コーラ</li>
                     <li>ファンタ</li>
                     <li>オレンジ</li>
                     <li>アップル</li>
                     <li>紅茶(Ice/Hot)</li>
-                    <li>コーヒー(Ice/Hot)</li>
+                    <li>コーヒー(Ice/Hot)<br><br></li>
                 </ul>
             </div>
         </nav>
         <h1 class="l-header__title">Hamburger</h1>
-        <form action="" method="get">
+        <form class="l-header__search" action="" method="get">
             <input  class="l-header__search__box" type="search" name="search" placeholder="">
             <button class="l-header__seach__btn" >検索</button>
         </form>
@@ -83,10 +89,17 @@
 <script>
     $('.l-header__menu-btn').on('click', function(){
     $('.l-header__menu-list').toggleClass('is-active');
-});
-    $('.l-header__menu-btn').on('click', function(){
     $('.l-header__menu-btn').toggleClass('is-active');
+    $('.l-header').toggleClass('is-active');
+    $('.fa').toggleClass('is-active');
 });
+$('.fa').on('click', function(){
+    $('.l-header__menu-list').toggleClass('is-active');
+    $('.l-header__menu-btn').toggleClass('is-active');
+    $('.l-header').toggleClass('is-active');
+    $('.fa').toggleClass('is-active');
+});
+
 </script>
 
 </body>
