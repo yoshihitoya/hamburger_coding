@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="scss/style.css">
     <title>Hamburger</title>
 </head>
-<body>
+<body >
     <!-- ヘッダー -->
     <header class="l-header"> 
         <!-- ハンバーガーメニュー  (https://eclair.company/media/make-hamburger-menu-simply/) -->
@@ -83,6 +83,9 @@
 <script>
     $('.l-header__menu-btn').on('click', function(){
     $('.l-header__menu-list').toggleClass('is-active');
+});
+    $('.l-header__menu-btn').on('click', function(){
+    $('.l-header__menu-btn').toggleClass('is-active');
 });
 </script>
 

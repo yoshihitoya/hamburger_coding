@@ -17,6 +17,7 @@ body {
   overflow-x: hidden;
   position: relative;
 }
+
 @media (min-width: 641px) {
   body {
     overflow-x: inherit;
@@ -39,8 +40,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 a:hover {
-  opacity: 0.6;
+  opacity: .6;
 }
 
 ul, ol {
@@ -60,7 +62,7 @@ table {
 }
 
 time {
-  font-family: "Oswald";
+  font-family: 'Oswald';
 }
 
 .l-sidebar {
@@ -70,10 +72,14 @@ time {
 .l-header {
   background-color: #FFF7EF;
 }
+
 .l-header__menu {
   display: flex;
   flex-direction: column;
+  position: static;
+  z-index: 0;
 }
+
 .l-header__menu-btn {
   position: relative;
   left: 85vw;
@@ -84,7 +90,14 @@ time {
   display: none;
 }
 
+.l-header__menu-btn.is-active {
+  font-size: 0;
+  height: 10vh;
+}
+
 .l-header__menu-list.is-active {
   display: block;
+  z-index: 10;
   background-color: #FFF7EF;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */

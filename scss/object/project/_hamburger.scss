@@ -2,9 +2,16 @@
     display: none;
 }
 
+.l-header__menu-btn.is-active {
+    font-size: 0;
+    height: 10vh;
+}
+
 .l-header__menu-list.is-active {
     display: block;
+    z-index: 10;
     background-color: #FFF7EF;
+   
 }
 
 
