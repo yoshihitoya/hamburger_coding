@@ -19,12 +19,17 @@
     color: #707070;
 }
 
+.wrapper.is-active {
+    background-color: #707070;
+    height: 100%;
+}
 
 .l-header.is-active {
     position: relative;
-    left: 10vw;
+    left: 15vw;
     width: 85vw;
-    padding: 1vw;
+    margin: 0;
+    padding: 0;
 
     
     .l-header__title {

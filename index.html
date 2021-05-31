@@ -11,75 +11,78 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Hamburger</title>
 </head>
-<body >
-    <!-- ヘッダー -->
-    <header class="l-header"> 
-        <!-- ハンバーガーメニュー  (https://eclair.company/media/make-hamburger-menu-simply/) -->
-        <i class="fa fa-remove fa-3x" aria-hidden="true"></i>
-        <nav class="l-header__menu l-sidebar">
-            <div class="l-header__menu-btn">Menu</div>
-            <!-- fontawesomeの設定と使い方 -->
-            <!-- https://coliss.com/articles/build-websites/operation/work/font-awesome-guide-and-useful-tricks.html -->
-            <div class="l-header__menu-list">
-                <!-- メニューのタイトルが入っていない -->
-                <ul class="burger">
-                    <h2>バーガー<br><br></h2>
-                    <li>ハンバーガー</li>
-                    <li>チーズバーガー</li>
-                    <li>テリヤキバーガー</li>
-                    <li>アボガドバーガー</li>
-                    <li>フィッシュバーガー</li>
-                    <li>ベーコンバーガー</li>
-                    <li>チキンバーガー<br><br></li>
-                </ul>
-                <ul class="side">
-                    <h2>サイド<br><br></h2>
-                    <li>ポテト</li>
-                    <li>サラダ</li>
-                    <li>ナゲット</li>
-                    <li>コーン<br><br></li>
-                </ul>
-                <ul class="drink">
-                    <h2>ドリンク<br><br></h2>
-                    <li>コーラ</li>
-                    <li>ファンタ</li>
-                    <li>オレンジ</li>
-                    <li>アップル</li>
-                    <li>紅茶(Ice/Hot)</li>
-                    <li>コーヒー(Ice/Hot)<br><br></li>
-                </ul>
-            </div>
-        </nav>
-        <h1 class="l-header__title">Hamburger</h1>
-        <form class="l-header__search" action="" method="get">
-            <input  class="l-header__search__box" type="search" name="search" placeholder="">
-            <button class="l-header__seach__btn" >検索</button>
-        </form>
-        <!-- https://style01.net/1203/ -->
-        <!-- inputのplaceholderにfontawesomeのアイコンを表示させる -->
+<body>
+    <div class="wrapper">
+        <!-- ヘッダー -->
+        <header class="l-header"> 
+            <!-- ハンバーガーメニュー  (https://eclair.company/media/make-hamburger-menu-simply/) -->
+            <i class="fa fa-remove fa-3x" aria-hidden="true"></i>
+            <nav class="l-header__menu l-sidebar">
+                <div class="l-header__menu-btn">Menu</div>
+                <!-- fontawesomeの設定と使い方 -->
+                <!-- https://coliss.com/articles/build-websites/operation/work/font-awesome-guide-and-useful-tricks.html -->
+                <div class="l-header__menu-list">
+                    <!-- メニューのタイトルが入っていない -->
+                    <ul class="burger">
+                        <h2>バーガー<br><br></h2>
+                        <li>ハンバーガー<br><br></li>
+                        <li>チーズバーガー<br><br></li>
+                        <li>テリヤキバーガー<br><br></li>
+                        <li>アボガドバーガー<br><br></li>
+                        <li>フィッシュバーガー<br><br></li>
+                        <li>ベーコンバーガー<br><br></li>
+                        <li>チキンバーガー<br><br></li>
+                    </ul>
+                    <ul class="side">
+                        <h2>サイド<br><br></h2>
+                        <li>ポテト<br><br></li>
+                        <li>サラダ<br><br></li>
+                        <li>ナゲット<br><br></li>
+                        <li>コーン<br><br></li>
+                    </ul>
+                    <ul class="drink">
+                        <h2>ドリンク<br><br></h2>
+                        <li>コーラ<br><br></li>
+                        <li>ファンタ<br><br></li>
+                        <li>オレンジ<br><br></li>
+                        <li>アップル<br><br></li>
+                        <li>紅茶(Ice/Hot)<br><br></li>
+                        <li>コーヒー(Ice/Hot)<br><br></li>
+                    </ul>
+                </div>
+            </nav>
+            <h1 class="l-header__title">Hamburger</h1>
+            <form class="l-header__search" action="" method="get">
+                <input  class="l-header__search__box" type="search" name="search" placeholder="">
+                <button class="l-header__seach__btn" >検索</button>
+            </form>
+            <!-- https://style01.net/1203/ -->
+            <!-- inputのplaceholderにfontawesomeのアイコンを表示させる -->
+            
+
         
+        </header>
 
+
+        <!-- メイン -->
+        <main>
+
+        </main>
+
+        <!-- サイドバー -->
+
+        <sidebar>
+
+        </sidebar>
+
+        <!-- フッター -->
+
+        <footer>
+
+
+        </footer>
+    </div>
     
-    </header>
-
-
-    <!-- メイン -->
-    <main>
-
-    </main>
-
-    <!-- サイドバー -->
-
-    <sidebar>
-
-    </sidebar>
-
-    <!-- フッター -->
-
-    <footer>
-
-
-    </footer>
     
 
     <!-- jQueryのCDN -->
@@ -92,12 +95,14 @@
     $('.l-header__menu-btn').toggleClass('is-active');
     $('.l-header').toggleClass('is-active');
     $('.fa').toggleClass('is-active');
+    $('.wrapper').toggleClass('is-active');
 });
 $('.fa').on('click', function(){
     $('.l-header__menu-list').toggleClass('is-active');
     $('.l-header__menu-btn').toggleClass('is-active');
     $('.l-header').toggleClass('is-active');
     $('.fa').toggleClass('is-active');
+    $('.wrapper').toggleClass('is-active');
 });
 
 </script>

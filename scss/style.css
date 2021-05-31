@@ -16,7 +16,10 @@ body {
   font-size: 1.4rem;
   overflow-x: hidden;
   position: relative;
+  margin: 0;
+  padding: 0;
 }
+
 @media (min-width: 641px) {
   body {
     overflow-x: inherit;
@@ -39,8 +42,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 a:hover {
-  opacity: 0.6;
+  opacity: .6;
 }
 
 ul, ol {
@@ -60,7 +64,7 @@ table {
 }
 
 time {
-  font-family: "Oswald";
+  font-family: 'Oswald';
 }
 
 .l-sidebar {
@@ -69,28 +73,34 @@ time {
 
 .l-header {
   background-color: #FFF7EF;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   color: #707070;
   height: 30vh;
+  margin: 0;
+  padding: 0;
 }
+
 .l-header__menu {
   display: flex;
   flex-direction: column;
   position: static;
   z-index: 0;
 }
+
 .l-header__menu-btn {
   position: relative;
   left: 85vw;
   width: 0%;
   font-size: 1.5rem;
 }
+
 .l-header__title {
-  font-size: 3rem;
+  font-size: 3.0rem;
   font-weight: bold;
   text-align: center;
-  margin: 2rem;
+  margin: 2.0rem;
 }
+
 .l-header__search {
   text-align: center;
 }
@@ -110,15 +120,23 @@ time {
   color: #707070;
 }
 
+.wrapper.is-active {
+  background-color: #707070;
+  height: 100%;
+}
+
 .l-header.is-active {
   position: relative;
-  left: 10vw;
+  left: 15vw;
   width: 85vw;
-  padding: 1vw;
+  margin: 0;
+  padding: 0;
 }
+
 .l-header.is-active .l-header__title {
   display: none;
 }
+
 .l-header.is-active .l-header__search {
   display: none;
 }
@@ -132,8 +150,10 @@ time {
   display: block;
   z-index: 10;
   background-color: #FFF7EF;
-  padding: 2rem;
+  padding: 2.0rem;
 }
+
 .l-header__menu-list.is-active h2 {
   font-size: 2rem;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
