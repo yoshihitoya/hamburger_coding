@@ -7,20 +7,20 @@
     background-color: #FFF7EF;
     font-family: 'Roboto';
     color: #707070;
-    height: 30vh;
+    height: 25vh;
     margin: 0;
     padding: 0;
     &__menu {
         display: flex;
         flex-direction: column;
-        position: static;
-        z-index: 0;
+
 
         &-btn {
             position: relative;
-            left: 85vw;
-            width: 0%;
-            font-size: 1.5rem;
+            left: 80vw;
+            width: 20vw;
+            top:1.0rem;
+            font-size: 2.0rem;
             
         }
         
@@ -29,10 +29,25 @@
         font-size: 3.0rem;
         font-weight: bold;
         text-align: center;
+        padding: 1.0rem;
         margin: 2.0rem;
     }
     &__search {
         text-align: center;
+        
+        &__box {
+            height:5vh;
+            border-radius: 1vh;
+            border-width: 0.1rem;
+            display: inline-block;
+            font-family: FontAwesome;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+
+        }
         
     }
 }
